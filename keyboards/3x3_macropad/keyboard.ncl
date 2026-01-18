@@ -11,6 +11,10 @@ let { CH552G, .. } = import "fak/mcus.ncl" in
   encoders = [
     PhysicalEncoder 30 31 4,
   ],
+  led = {
+    pin = 34,
+    count = 6,
+  },
   keys =
     let D = DirectPinKey in
     [
